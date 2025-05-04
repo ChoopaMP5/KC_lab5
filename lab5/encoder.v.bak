@@ -23,6 +23,7 @@ always @(*) begin
     16'b1000_0000_0000_0000: out = 4'b1111; // 15
     default: out = 4'bxxxx; //?????????? ?????????
   endcase
+  $display("in = %h => out = %b", in, out);
 end
 
 endmodule
